@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Otogalimoveis.Domain.Data;
 using Otogalimoveis.Domain.Model;
+using Otogalimoveis.Domain.Data;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Otogalimoveis.WebAPI.Controllers
 {
