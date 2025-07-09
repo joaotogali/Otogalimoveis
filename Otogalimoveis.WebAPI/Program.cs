@@ -16,6 +16,7 @@ builder.Services.AddDbContext<OtogaliDBContext>(options =>
 
 // Register Data layer dependencies
 builder.Services.AddScoped<Otogalimoveis.Domain.Data.IImovelData, Otogalimoveis.Infrastructure.Data.ImovelData>();
+builder.Services.AddScoped<Otogalimoveis.Domain.Data.ILocatarioData, Otogalimoveis.Infrastructure.Data.LocatarioData>();
 
 var app = builder.Build();
 

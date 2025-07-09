@@ -9,6 +9,6 @@ namespace Otogalimoveis.Infrastructure
 
         public DbSet<Aluguel> Alugueis { get; set; }
         public DbSet<Imovel> Imoveis { get; set; }
-        public DbSet<Locatario> Locatario { get; set; }
+        public DbSet<Locatario> Locatarios { get; set; }
     }
 }
