@@ -19,6 +19,10 @@ builder.Services.AddScoped<Otogalimoveis.Domain.Data.IImovelData, Otogalimoveis.
 builder.Services.AddScoped<Otogalimoveis.Domain.Data.ILocatarioData, Otogalimoveis.Infrastructure.Data.LocatarioData>();
 builder.Services.AddScoped<Otogalimoveis.Domain.Data.IAluguelData, Otogalimoveis.Infrastructure.Data.AluguelData>();
 
+// Register Application Services
+builder.Services.AddScoped<Otogalimoveis.Application.Services.IImovelService, Otogalimoveis.Application.Services.ImovelService>();
+builder.Services.AddScoped<Otogalimoveis.Application.Services.IAluguelService, Otogalimoveis.Application.Services.AluguelService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
