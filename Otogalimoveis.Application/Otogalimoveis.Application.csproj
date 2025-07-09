@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="15.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Otogalimoveis.Domain\Otogalimoveis.Domain.csproj" />
     <ProjectReference Include="..\Otogalimoveis.Infrastructure\Otogalimoveis.Infrastructure.csproj" />
   </ItemGroup>
