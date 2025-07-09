@@ -3,17 +3,17 @@
     public class Imovel
     {
         public int Id { get; set; }
-        public string Tipo { get; set; }
-        public string Endereco { get; set; }
+        public string Tipo { get; set; } = string.Empty;
+        public string Endereco { get; set; } = string.Empty;
         public decimal ValorLocacao { get; set; }
         public ImovelStatus Status { get; set; }
 
-        public ICollection<Aluguel> Alugueis { get; set; }
+        public ICollection<Aluguel> Alugueis { get; set; } = new List<Aluguel>();
     }
 
     public enum ImovelStatus
     {
         Disponivel = 0,
-        Alugado =1
+        Alugado = 1
     }
 }

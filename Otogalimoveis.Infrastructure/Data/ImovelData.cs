@@ -18,7 +18,7 @@ namespace Otogalimoveis.Infrastructure.Data
             return await _context.Imoveis.ToListAsync();
         }
 
-        public async Task<Imovel> GetByIdAsync(int id)
+        public async Task<Imovel?> GetByIdAsync(int id)
         {
             return await _context.Imoveis.FindAsync(id);
         }

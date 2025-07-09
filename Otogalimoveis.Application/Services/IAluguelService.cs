@@ -7,7 +7,7 @@ namespace Otogalimoveis.Application.Services
     public interface IAluguelService
     {
         Task<IEnumerable<Aluguel>> GetAllAsync();
-        Task<Aluguel> GetByIdAsync(int id);
+        Task<Aluguel?> GetByIdAsync(int id);
         Task AddAsync(Aluguel aluguel);
         Task UpdateAsync(Aluguel aluguel);
         Task DeleteAsync(int id);

@@ -7,7 +7,7 @@ namespace Otogalimoveis.Domain.Data
     public interface IAluguelData 
     {
         Task<IEnumerable<Aluguel>> GetAllAsync();
-        Task<Aluguel> GetByIdAsync(int id);
+        Task<Aluguel?> GetByIdAsync(int id);
         Task AddAsync(Aluguel aluguel);
         Task UpdateAsync(Aluguel aluguel);
         Task DeleteAsync(int id);

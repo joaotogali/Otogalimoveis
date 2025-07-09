@@ -22,6 +22,7 @@ builder.Services.AddScoped<Otogalimoveis.Domain.Data.IAluguelData, Otogalimoveis
 // Register Application Services
 builder.Services.AddScoped<Otogalimoveis.Application.Services.IImovelService, Otogalimoveis.Application.Services.ImovelService>();
 builder.Services.AddScoped<Otogalimoveis.Application.Services.IAluguelService, Otogalimoveis.Application.Services.AluguelService>();
+builder.Services.AddScoped<Otogalimoveis.Application.Services.ILocatarioService, Otogalimoveis.Application.Services.LocatarioService>();
 
 var app = builder.Build();
 
