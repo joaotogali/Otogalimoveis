@@ -25,7 +25,7 @@ namespace Otogalimoveis.Application.Services
             return await _aluguelData.GetAllAsync();
         }
 
-        public async Task<Aluguel> GetByIdAsync(int id)
+        public async Task<Aluguel?> GetByIdAsync(int id)
         {
             return await _aluguelData.GetByIdAsync(id);
         }

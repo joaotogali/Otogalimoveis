@@ -22,7 +22,7 @@ namespace Otogalimoveis.Application.Services
             return await _imovelData.GetAllAsync();
         }
 
-        public async Task<Imovel> GetByIdAsync(int id)
+        public async Task<Imovel?> GetByIdAsync(int id)
         {
             return await _imovelData.GetByIdAsync(id);
         }

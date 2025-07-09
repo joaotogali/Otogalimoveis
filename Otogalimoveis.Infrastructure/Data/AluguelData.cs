@@ -24,7 +24,7 @@ namespace Otogalimoveis.Infrastructure.Data
                 .ToListAsync();
         }
 
-        public async Task<Aluguel> GetByIdAsync(int id)
+        public async Task<Aluguel?> GetByIdAsync(int id)
         {
             return await _context.Alugueis
                 .Include(a => a.Imovel)
