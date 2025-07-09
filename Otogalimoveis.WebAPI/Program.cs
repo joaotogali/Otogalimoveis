@@ -14,6 +14,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<OtogaliDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// Register Data layer dependencies
+builder.Services.AddScoped<Otogalimoveis.Domain.Data.IImovelData, Otogalimoveis.Infrastructure.Data.ImovelData>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
