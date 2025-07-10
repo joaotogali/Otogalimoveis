@@ -1,6 +1,6 @@
 # Otogalimoveis
 
-Sistema de aluguel de imóveis, desenvolvido como projeto de seleção para vaga de Desenvolvedor Júnior.
+Sistema de aluguel de imóveis.
 
 ## 🏗️ Estrutura do Projeto
 
