@@ -19,7 +19,7 @@ Sistema de aluguel de imóveis.
 ### 2. Configuração do Banco
 - Edite o arquivo `Otogalimoveis.WebAPI/appsettings.json` com sua connection string:
   ```json
-  "DefaultConnection": "Server=localhost\\SQLotogali;Database=OtogalimoveisDb;Trusted_Connection=True;MultipleActiveResultSets=true;Encrypt=False;TrustServerCertificate=True"
+  "DefaultConnection": "Server=localhost\\YourInstance;Database=OtogalimoveisDb;Trusted_Connection=True;MultipleActiveResultSets=true;Encrypt=False;TrustServerCertificate=True"
   ```
 - Crie o banco e as tabelas rodando:
   ```sh
